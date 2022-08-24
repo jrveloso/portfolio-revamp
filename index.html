@@ -4,50 +4,105 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5a0f7d799e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Jordan's Portfolio</title>
 </head>
 <body>
-    <section>
+    <section id="drawer">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </section>
+    <section class="container">
         <header>
-            <nav>
-                <a href="#">PROJECTS</a>
-
-                <span><a href="#">WELCOME</a></span>
-
-                <ul>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">CONTACT</a></li>
+            <nav class="head">
+                <a href=""><svg id="burger" width="24" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M24 16v2H0v-2h24zm0-8v2H0V8h24zm0-8v2H0V0h24z" fill="rgb(32, 33, 36)" fill-rule="evenodd"/></svg></a>
+                <ul class="menu">
+                    <li>about</li>
+                    <li>projects</li>
+                    <li>contact</li>
                 </ul>
+                <div class="dark-mode-toggler">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox" class="label" aria-label="Toggler for Dark Mode">
+                        <div class="ball"></div>
+                    </label>
+                </div>
             </nav>
         </header>
 
-        <section class="main">
-            <main class="left-main">
-                <h1>Jordan Veloso</h1>
-                <span>Software Engineer based in Chicago, IL</span>
-            </main>
+        <main class="container">
+            <section class="welcome">
+                <section class="name-title">
+                    <h1>Jordan Veloso</h1>
+                    <span>Software Engineer in Chicago</span>
+                </section>
+                <!-- <section id="image-frame"> -->
+                <section class="photo-socials">
+                    <img src="images/headshot.jpg" alt="" id="headshot" class="light">
+                    <!-- </section> -->
+                    <ul class="socials">
+                        <li><a href=""><i class="fa-brands fa-linkedin fa-2xl"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-github fa-2xl"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-twitter fa-2xl"></i></a></li>
+                    </ul>
+                </section>
+                
+                <p>Hi, there! My name is Jordan. While working as an RN during the Covid-19 pandemic, I discovered a passion for developing web applications in my off time. Seeing code come to life on my screen was incredibly satisfying, and it was a way to combine my love for problem solving with a bit of creativity. With that being said, welcome to my portfolio! I'll be uploading any projects I complete below, feel free to check those out.</p>
 
-            <img src="#" class="right-main">
-        </section>
+                <p>When I'm not writing code, I enjoy anything NBA-related, playing guitar, and any time spent with those closest to me. If you have any questions, don't hesitate to reach out to me.</p>
+            </section>
 
-        <section class="about">
-            <h3>About Me</h3>
-            <p>Need a software developer for your next web application? Feel free to take a look around at some of my work below. Contact me and let's make a website that works for you and your business</p>
-        </section>
+            <section class="skills">
+                <h2>Skills</h2>
+                <ul id="skills-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>MongoDB</li>
+                    <li>Express</li>
+                    <li>Node</li>
+                    <li>Git</li>
+                    <li>Postman</li>
+                </ul>
+            </section>
 
-        <section class="projects">
-            <h2>Projects</h2>
-            <div>
-                <img src="#">
-                <img src="#">
-                <img src="#">
-            </div>
-        </section>
+            <section class="projects">
+                <h2>Projects</h2>
+                <div class="project-grid">
+                    <div class="project"><a href="https://cocos-bar-and-grill-restaurant.netlify.app/" target="_blank" rel="noopener noreferrer">
+                        <img src="images/restaurant-layout.png" alt=""></a>
+                    </div>
+                    <div class="project"><a href="https://sunnyside-creatives-agency-challenge.netlify.app/" target="_blank" rel="noopener noreferrer">
+                        <img src="images/sunnyside-agency layout.png" alt=""></a>
+                    </div>
+                </div>
+            </section>
 
-        <footer>
+            <section class="contact">
+                <h2>Contact</h2>
+                <section>
+                    <form method="POST" class="contact">
+                        <input type="text" name="name" class="email" placeholder="Name">
+                        <input type="text" name="email" class="email" placeholder="Email">
+                        <textarea type="textarea" name="message" class="email" placeholder="Message"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </section>
+            </section>
 
-        </footer>
+        </main>
+
+        
     </section>
+    <script src="main.js"></script>
 </body>
 </html>
