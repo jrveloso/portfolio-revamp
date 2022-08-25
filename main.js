@@ -36,3 +36,11 @@ const body = document.querySelector('main')
 body.addEventListener('click', () => {
     document.querySelector('.menu').classList.add('mobile-display')
 })
+
+const link = document.querySelectorAll('.link')
+
+link.forEach( li => { 
+    li.addEventListener('click', () => {
+        document.querySelector('.menu').classList.add('mobile-display')
+    })
+})
