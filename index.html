@@ -13,22 +13,16 @@
     <title>Jordan's Portfolio</title>
 </head>
 <body>
-    <section id="drawer">
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </section>
-    <section class="container">
+    <section class="container" id="top">
         <header>
             <nav class="head">
                 <a href=""><svg id="burger" width="24" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M24 16v2H0v-2h24zm0-8v2H0V8h24zm0-8v2H0V0h24z" fill="rgb(32, 33, 36)" fill-rule="evenodd"/></svg></a>
-                <ul class="menu">
-                    <li>about</li>
-                    <li>projects</li>
-                    <li>contact</li>
+                <ul class="menu mobile-display">
+                    <i class="fa-solid fa-xmark-large"></i>
+                    <a href="#about"><li>about</li></a>
+                    <a href="#skills-section"><li>skills</li></a>
+                    <a href="#projects-section"><li>projects</li></a>
+                    <a href="#contact-section"><li>contact</li></a>
                 </ul>
                 <div class="dark-mode-toggler">
                     <input type="checkbox" id="checkbox">
@@ -40,68 +34,78 @@
         </header>
 
         <main class="container">
-            <section class="welcome">
+            <section class="welcome" id="about">
                 <section class="name-title">
-                    <h1>Jordan Veloso</h1>
-                    <span>Software Engineer in Chicago</span>
+                    <h1>jordan veloso</h1>
+                    <span>software engineer</span>
                 </section>
                 <!-- <section id="image-frame"> -->
                 <section class="photo-socials">
-                    <img src="images/headshot.jpg" alt="" id="headshot" class="light">
+                    <img src="images/headshot.jpg" alt="Jordan's headshot" id="headshot">
                     <!-- </section> -->
                     <ul class="socials">
-                        <li><a href=""><i class="fa-brands fa-linkedin fa-2xl"></i></a></li>
-                        <li><a href=""><i class="fa-brands fa-github fa-2xl"></i></a></li>
-                        <li><a href=""><i class="fa-brands fa-twitter fa-2xl"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-linkedin fa-2xl dark-icon"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-github fa-2xl dark-icon"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-twitter fa-2xl dark-icon"></i></a></li>
                     </ul>
                 </section>
                 
-                <p>Hi, there! My name is Jordan. While working as an RN during the Covid-19 pandemic, I discovered a passion for developing web applications in my off time. Seeing code come to life on my screen was incredibly satisfying, and it was a way to combine my love for problem solving with a bit of creativity. With that being said, welcome to my portfolio! I'll be uploading any projects I complete below, feel free to check those out.</p>
+                <p>Hi, my name is Jordan. While working as an RN during the Covid-19 pandemic, I discovered a passion for developing web applications in my off time. Seeing code come to life on my screen was incredibly satisfying, and it was a way to combine my love for problem solving with a bit of creativity. With that being said, welcome to my portfolio! I'll be uploading any projects I complete below, feel free to check those out.</p>
 
-                <p>When I'm not writing code, I enjoy anything NBA-related, playing guitar, and any time spent with those closest to me. If you have any questions, don't hesitate to reach out to me.</p>
+                <p>When I'm not writing code, I enjoy any basketball/music related activities. If you have any questions, don't hesitate to reach out to me.</p>
             </section>
 
-            <section class="skills">
-                <h2>Skills</h2>
-                <ul id="skills-list">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>MongoDB</li>
-                    <li>Express</li>
-                    <li>Node</li>
-                    <li>Git</li>
-                    <li>Postman</li>
-                </ul>
+            <section class="skills" id="skills-section">
+                <h2>skills</h2>
+                <section class="skills-list">
+                    <ul class="front">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                    <ul class="front">
+                        <li>MongoDB</li>
+                        <li>Express</li>
+                        <li>Node</li>
+                        <li>Git</li>
+                        <li>Postman</li>
+                    </ul>
+                </section>
             </section>
 
-            <section class="projects">
-                <h2>Projects</h2>
+            <section class="projects" id="projects-section">
+                <h2>projects</h2>
                 <div class="project-grid">
                     <div class="project"><a href="https://cocos-bar-and-grill-restaurant.netlify.app/" target="_blank" rel="noopener noreferrer">
-                        <img src="images/restaurant-layout.png" alt=""></a>
+                        <img src="images/restaurant-layout.png" alt="Coco's Bar and Grill Landing Page"></a>
                     </div>
                     <div class="project"><a href="https://sunnyside-creatives-agency-challenge.netlify.app/" target="_blank" rel="noopener noreferrer">
-                        <img src="images/sunnyside-agency layout.png" alt=""></a>
+                        <img src="images/sunnyside-agency layout.png" alt="Sunnyside Creative Agency Landing page"></a>
                     </div>
                 </div>
             </section>
 
-            <section class="contact">
-                <h2>Contact</h2>
+            <section class="contact" id="contact-section">
+                <h2>contact</h2>
                 <section>
                     <form method="POST" class="contact">
-                        <input type="text" name="name" class="email" placeholder="Name">
-                        <input type="text" name="email" class="email" placeholder="Email">
-                        <textarea type="textarea" name="message" class="email" placeholder="Message"></textarea>
-                        <button type="submit">Submit</button>
+                        <input type="text" name="name" class="email" placeholder="name">
+                        <input type="text" name="email" class="email" placeholder="email">
+                        <textarea type="textarea" name="message" class="email" placeholder="message"></textarea>
+                        <button type="submit">send</button>
                     </form>
                 </section>
             </section>
 
+            <div>
+                <a href="#top">
+                    <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"></path></svg>
+                </a>
+            </div>
         </main>
-
-        
+        <footer>
+            <span>jordan veloso</span>
+        </footer>
     </section>
     <script src="main.js"></script>
 </body>
