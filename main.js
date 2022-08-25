@@ -27,6 +27,12 @@ checkbox.addEventListener('change', () => {
 
 const burger = document.querySelector('#burger')
 
-burger.addEventListener('click', () => {
+burger.addEventListener('mousedown', () => {
     document.querySelector('.menu').classList.remove('mobile-display')
+})
+
+const body = document.querySelector('main')
+
+body.addEventListener('click', () => {
+    document.querySelector('.menu').classList.add('mobile-display')
 })
