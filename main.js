@@ -31,10 +31,10 @@ burger.addEventListener('mousedown', () => {
     document.querySelector('.menu').classList.remove('mobile-display')
 })
 
-const body = document.querySelector('main')
+const body = document.querySelector('.outside')
 
 body.addEventListener('click', () => {
-    document.querySelector('.menu').classList.add('mobile-display')
+        document.querySelector('.menu').classList.add('mobile-display')
 })
 
 const link = document.querySelectorAll('.link')
