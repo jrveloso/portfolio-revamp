@@ -14,26 +14,24 @@
 </head>
 <body>
     <section class="container" id="top">
-        <header>
-            <nav class="head">
-                <a href=""><svg id="burger" width="24" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M24 16v2H0v-2h24zm0-8v2H0V8h24zm0-8v2H0V0h24z" fill="rgb(32, 33, 36)" fill-rule="evenodd"/></svg></a>
-                <ul class="menu mobile-display reveal active">
-                    <i class="fa-solid fa-xmark-large"></i>
-                    <a href="#about" class="link"><li>about</li></a>
-                    <a href="#skills-section" class="link"><li>skills</li></a>
-                    <a href="#projects-section" class="link"><li>projects</li></a>
-                    <a href="#contact-section" class="link"><li>contact</li></a>
-                </ul>
-                <div class="dark-mode-toggler">
-                    <input type="checkbox" id="checkbox">
-                    <label for="checkbox" class="label" aria-label="Toggler for Dark Mode">
-                        <div class="ball"></div>
-                    </label>
-                </div>
-            </nav>
-        </header>
-
-        <main class="container">
+        <main class="container" id="main">
+            <header>
+                <nav class="head">
+                    <a href=""><svg id="burger" width="24" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M24 16v2H0v-2h24zm0-8v2H0V8h24zm0-8v2H0V0h24z" fill="rgb(32, 33, 36)" fill-rule="evenodd"/></svg></a>
+                    <ul class="menu mobile-display">
+                        <a href="#about" class="link"><li>about</li></a>
+                        <a href="#skills-section" class="link"><li>skills</li></a>
+                        <a href="#projects-section" class="link"><li>projects</li></a>
+                        <a href="#contact-section" class="link"><li>contact</li></a>
+                    </ul>
+                    <div class="dark-mode-toggler">
+                        <input type="checkbox" id="checkbox">
+                        <label for="checkbox" class="label" aria-label="Toggler for Dark Mode">
+                            <div class="ball"></div>
+                        </label>
+                    </div>
+                </nav>
+            </header>
             <section class="welcome" id="about">
                 <section class="name-title">
                     <h1>jordan veloso</h1>
@@ -43,16 +41,22 @@
                 <section class="photo-socials">
                     <img src="images/headshot.jpg" alt="Jordan's headshot" id="headshot">
                     <!-- </section> -->
-                    <ul class="socials">
-                        <li><a href="https://www.linkedin.com/in/jordan-veloso-a51b37236/"><i class="fa-brands fa-linkedin fa-2xl dark-icon"></i></a></li>
-                        <li><a href="https://github.com/jrveloso"><i class="fa-brands fa-github fa-2xl dark-icon"></i></a></li>
-                        <li><a href="https://twitter.com/jordanvelos"><i class="fa-brands fa-twitter fa-2xl dark-icon"></i></a></li>
-                    </ul>
+                    <section id="name-title-socials">
+                        <section class="name-title-desktop">
+                            <h1>jordan veloso</h1>
+                            <span>software engineer</span>
+                        </section>
+                        <ul class="socials">
+                            <li><a href="https://www.linkedin.com/in/jordan-veloso-a51b37236/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin fa-2xl dark-icon"></i></a></li>
+                            <li><a href="https://github.com/jrveloso" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github fa-2xl dark-icon"></i></a></li>
+                            <li><a href="https://twitter.com/jordanvelos" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter fa-2xl dark-icon"></i></a></li>
+                        </ul>
+                    </section>
                 </section>
                 
-                <p>Hi, my name is Jordan. While working as an RN during the Covid-19 pandemic, I discovered a passion for developing web applications in my off time. Seeing code come to life on my screen was incredibly satisfying, and it was a way to combine my love for problem solving with a bit of creativity. With that being said, welcome to my portfolio! I'll be uploading any projects I complete below, feel free to check those out.</p>
-
-                <p>When I'm not writing code, I enjoy any basketball/music related activities. If you have any questions, don't hesitate to reach out to me.</p>
+                <p>Hi, my name is Jordan. While working as an RN during the Covid-19 pandemic, I discovered a passion for developing web applications in my off time. Seeing code come to life on my screen was so satisfying, and it was a way to combine my love for problem solving with a bit of creativity. When I'm not writing code, I enjoy any basketball/music/gaming related activities.</p>
+                    
+                <p>With that being said, welcome to my portfolio! I'll be uploading any projects below. I'm also open to freelance projects. If you're looking to build your web presence, don't hesitate to reach out to me below.</p>
             </section>
 
             <section class="skills" id="skills-section">
@@ -104,7 +108,7 @@
             </div>
         </main>
         <footer>
-            <span>jordan veloso</span>
+            <span class="copyright">jordan veloso</span>
         </footer>
     </section>
     <script src="main.js"></script>
