@@ -286,17 +286,6 @@ footer {
     font-size: 1.75rem;
     align-self: center;
 }
-.reveal {
-	/* position: relative; */
-	/* transform: translateY(150px); */
-	/* opacity: 0; */
-	transition: all 0.5s ease;
-}
-
-.reveal.active{
-	/* transform: translateY(0px); */
-	/* opacity: 1; */
-}
 
 @media (max-width: 667px) {
     header {
@@ -307,7 +296,6 @@ footer {
         margin: 0;
     }
     #burger {
-        /* margin-top: 32px; */
         transform: scale(1);
     }
     .darkburger {

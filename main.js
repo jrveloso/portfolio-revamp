@@ -18,7 +18,7 @@ checkbox.addEventListener('change', () => {
         document.querySelector('path').setAttribute("fill", "#292C35")
         document.querySelector('.fa-github').style.color = '#292C35'
         document.querySelector('.fa-twitter').style.color = 'rgb(73, 155, 233)'
-        document.querySelector('.fa-linkedin').style.color = 'rgb(44, 102, 188)'
+        document.querySelector('.fa-linkedin').style.color = 'rgb(44, 102, 188'
         document.querySelector('h1').style.color = '#292C35'
         document.querySelector('button').style.border = '1.5px solid #292C35'
     }
