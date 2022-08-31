@@ -44,10 +44,13 @@ body {
 }
 header {
     margin-bottom: 50px;
+    max-width: 667px;
+    margin-right: auto;
+    margin-left: auto;
 }
 main {
     margin: 0 auto 0 auto;
-    max-width: 667px;
+    /* max-width: 667px; */
     padding: 0 20px;
 }
 .menu {
@@ -62,6 +65,7 @@ main {
     border-radius: 8px;
 }
 .menu li:hover {
+    transition: 300ms;
     background: #292C35;
     color: #fcfcfc;
 }
@@ -110,12 +114,16 @@ h1 {
     margin: 0;
 }
 h2 {
+    margin-top: 8px;
     font-size: 4.25rem;
     text-align: center;
 }
 .welcome {
     display: flex;
     flex-direction: column;
+    max-width: 667px;
+    margin-right: auto;
+    margin-left: auto;
 }
 .welcome span {
     font-size: 3rem;
@@ -149,18 +157,49 @@ h2 {
     color: rgb(73, 155, 233);
     transform: scale(1.5);
 }
+.fa-twitter:hover {
+    -webkit-filter: brightness(130%);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    /* transform: translateY(-5px); */
+}
 .fa-linkedin {
     color: rgb(44, 102, 188);
     transform: scale(1.5);
+}
+.fa-linkedin:hover {
+    -webkit-filter: brightness(150%);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    /* transform: translateY(5px); */
 }
 .fa-github {
     color: #292C35;
     transform: scale(1.5);
 }
-
+.fa-github:hover {
+    -webkit-filter: brightness(300%);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    /* transform: translateY(-5px); */
+}
 
 /*************SECTION: SKILLS ************/
 
+.skills {
+    max-width: 667px;
+    margin-right: auto;
+    margin-left: auto;
+}
 .skills-list {
     display: flex;
     justify-content: space-around;
@@ -179,9 +218,12 @@ h2 {
 /*************SECTION: PROJECTS ************/
 
 .project-grid {
+    max-width: 960px;
     display: grid;
-    grid-template-columns: repeat(auto-fill,  minmax(374px, 1fr));
+    grid-template-columns: repeat(auto-fill,  minmax(400px, 1fr));
     gap: 16px;
+    margin-right: auto;
+    margin-left: auto;
 }
 .project {
     box-shadow: 0px 3px 16px -4px #292C35;
@@ -206,6 +248,9 @@ h2 {
 /*************SECTION: CONTACT ************/
 
 .contact {
+    max-width: 667px;
+    margin-right: auto;
+    margin-left: auto;
     padding-bottom: 32px;
 }
 .contact > section {
@@ -243,6 +288,7 @@ button {
     width: 150px;
 }
 button:hover {
+    transition: 300ms;
     cursor: pointer;
     background-color: #292C35;
     color: #fcfcfc;
@@ -261,10 +307,10 @@ button:hover {
 .container > div {
     width: 8px;
 }
-.MuiSvgIcon-fontSizeLarge {
+.MuiSvgIcon-fontSizeLarge-arrow {
     font-size: 2rem;
 }
-.MuiSvgIcon-root {
+.MuiSvgIcon-root-arrow {
     position: fixed;
     bottom: 30px;
     right: 15px;
@@ -279,6 +325,9 @@ button:hover {
     display: hidden;
 }
 footer {
+    max-width: 667px;
+    margin-right: auto;
+    margin-left: auto;
     height: 96px;
     display: flex;
     justify-content: center;
@@ -287,7 +336,16 @@ footer {
     font-size: 1.75rem;
     align-self: center;
 }
-
+@media screen and (min-width: 667px) and (max-width: 900px) {
+    .menu {
+        transition: 300ms;
+        /* display: flex; */
+        width: 75% !important;
+        justify-content: space-around;
+        gap: 40px;
+        padding: 0;
+    }
+}
 @media (max-width: 667px) {
     header {
         display: flex;
@@ -310,13 +368,43 @@ footer {
         z-index: 1;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        /* justify-content: center; */
+        align-items: center;
         gap: 16px;
         padding: 0;
+        box-shadow: 0px 3px 16px -4px #292C35;
+    }
+    .MuiSvgIcon-fontSizeLarge {
+        font-size: 1rem;
+    }
+    .MuiSvgIcon-root {
+        /* position: absolute; */
+        bottom: 0px;
+        right: 15px;
+        fill: #292C35;
+        width: 1em;
+        height: 1em;
+        display: inline-block;
+        align-self: end;
+        margin-top: 8px;
+        margin-right: 8px;
+        margin-bottom: 288px;
+        font-size: 4rem;
+        transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    }
+    .MuiSvgIcon-root:hover {
+        cursor: pointer;
+    }
+    .menu a {
+        width: fit-content;
     }
     .menu li {
-        font-size: 2rem;
+        font-size: 3rem;
         text-align: center;
+    }
+    .menu li:hover {
+        transition: 300ms;
+        width: 100%;
     }
     .mobile-display {
         display: none;
@@ -346,12 +434,12 @@ footer {
         width: 100%;
     }
 }
-@media (min-width: 668px) { 
+@media (min-width: 667px) { 
     header {
-        padding-left: 20px;
+        /* padding-left: 20px; */
         padding-right: 20px;
         display: flex;
-        justify-content: center;
+        /* justify-content: center; */
         align-items: center;
         height: 8rem;
     }
@@ -377,18 +465,24 @@ footer {
     }
     .head{
         display: flex;
+        width: 100%;
+    }
+    .MuiSvgIcon-root {
+        display: none;
     }
     .menu {
         display: flex;
+        width: 100%;
+        justify-content: space-between;
         gap: 40px;
         padding: 0;
     }
     .menu li {
-        font-size: 2rem;
+        font-size: 2.25rem;
         text-align: center;
     }
     .project-grid {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(374px, 1fr);
         gap: 24px;
     }
     .projects img {
