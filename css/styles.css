@@ -238,10 +238,10 @@ h2 {
     transition: all 0.5s ease;
     transform: translateY(-5px);
 }
-.projects video {
+.projects img {
     width: 100%;
 }
-.projects video:hover {
+.projects img:hover {
     cursor: pointer;
 }
 
@@ -430,7 +430,7 @@ footer {
         grid-template-columns: repeat(1, 1fr);
         gap: 8px;
     }
-    .projects video {
+    .projects img {
         width: 100%;
     }
 }
@@ -485,7 +485,7 @@ footer {
         grid-template-columns: repeat(374px, 1fr);
         gap: 24px;
     }
-    .projects video {
+    .projects img {
         width: 100%;
     }
 }
