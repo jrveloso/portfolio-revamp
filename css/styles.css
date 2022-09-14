@@ -239,6 +239,7 @@ h2 {
 }
 .projects img {
     width: 100%;
+    height: auto;
 }
 .hovercap {
     /* (C1) DIMENSIONS */
@@ -248,11 +249,10 @@ h2 {
 
     /* (C2) PLACE AT BOTTOM */
     position: absolute;
-    bottom: 8px; 
+    bottom: 16px; 
     left: 0;
 
     /* (C3) COLORS */
-    /* background-color: rgba(0, 0, 0, 0.5); */
     color: white;
     font-size: 2.5rem;
 }
@@ -262,8 +262,8 @@ h2 {
     opacity: 0;
     transition: opacity 0.25s;
 }
-.project img:hover {
-    -webkit-filter: brightness(50%);
+.project:hover {
+    -webkit-filter: brightness(100%);
     -webkit-transition: all 0.25s ease;
     -moz-transition: all 0.25s ease;
     -o-transition: all 0.25s ease;
@@ -273,8 +273,9 @@ h2 {
     cursor: pointer;
 }
 .project:hover .hovercap {
+    background: #292C35;
     visibility: visible; 
-    opacity: 1;
+    opacity: 0.85;
 }
 /* (A) WRAPPER */
 .hoverwrap {
@@ -463,10 +464,16 @@ footer {
     }
     .project-grid {
         grid-template-columns: repeat(1, 1fr);
-        gap: 8px;
+        gap: 16px;
     }
     .projects img {
+        -webkit-filter: brightness(70%);
         width: 100%;
+        height: auto;
+    }
+    .hovercap {
+        visibility: visible; 
+        opacity: 1;
     }
 }
 @media (min-width: 667px) { 
@@ -522,5 +529,6 @@ footer {
     }
     .projects img {
         width: 100%;
+        height: auto;
     }
 }
