@@ -476,13 +476,14 @@ footer {
         gap: 16px;
     }
     .projects img {
-        -webkit-filter: brightness(70%);
+        /* -webkit-filter: brightness(70%); */
         width: 100%;
         height: auto;
     }
     .hovercap {
+        background: #292C35;
         visibility: visible; 
-        opacity: 1;
+        opacity: 0.85;
     }
 }
 @media (min-width: 667px) { 
