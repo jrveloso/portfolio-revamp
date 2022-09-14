@@ -374,6 +374,13 @@ footer {
     font-size: 1.75rem;
     align-self: center;
 }
+.bold {
+    font-weight: 900;
+    font-size: 2rem;
+    text-decoration: none;
+    color: inherit;
+}
+
 @media screen and (min-width: 667px) and (max-width: 900px) {
     .menu {
         transition: 300ms;
