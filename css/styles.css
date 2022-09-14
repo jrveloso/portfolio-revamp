@@ -324,7 +324,7 @@ button {
     width: 150px;
 }
 button:hover {
-    transition: 300ms;
+    transition: 200ms;
     cursor: pointer;
     background-color: #292C35;
     color: #fcfcfc;
