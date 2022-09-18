@@ -9,6 +9,7 @@ checkbox.addEventListener('change', () => {
         document.querySelector('#headshot').src = 'images/darkheadshot.jpeg'
         document.querySelector('.menu').style.background = '#292C35'
         document.querySelector('.MuiSvgIcon-root').style.fill = '#bdbddd'
+        document.querySelector('.MuiSvgIcon-root-arrow').style.fill = '#bdbddd'
         document.querySelector('path').setAttribute("fill", "#bdbddd")
         document.querySelector('.fa-github').style.color = 'rgb(97,99, 103)'
         document.querySelector('.fa-twitter').style.color = 'rgb(97,99, 103)'
