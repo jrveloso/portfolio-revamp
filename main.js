@@ -11,6 +11,9 @@ checkbox.addEventListener('change', () => {
         document.querySelector('.MuiSvgIcon-root').style.fill = '#bdbddd'
         document.querySelector('.MuiSvgIcon-root-arrow').style.fill = '#bdbddd'
         document.querySelector('path').setAttribute("fill", "#bdbddd")
+        document.querySelector('.fa-github').style.color = 'rgb(97,99, 103)'
+        document.querySelector('.fa-twitter').style.color = 'rgb(97,99, 103)'
+        document.querySelector('.fa-linkedin').style.color = 'rgb(97,99, 103)'
         document.querySelector('h1').style.color = 'rgb(147,161, 212)'
         document.querySelectorAll('.email').style.background = '#bdbddd'
         document.querySelector('button').style.border = '1.5px solid #bdbddd'
